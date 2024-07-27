@@ -49,11 +49,11 @@ const Projects = () => {
   ];
 
   return (
-    <div className="bg-stone-950 text-white h-fit pt-2 pb-32 px-32 rounded-t-[4rem]">
-      <div className="text-9xl py-36 font-light">
+    <div className="bg-stone-950 text-white h-fit pt-2 md:pt-0 pb-32 px-6 md:px-32 md:rounded-t-[4rem]">
+      <div className="text-5xl md:text-9xl py-14 md:py-28 font-light">
         <div>Featured</div>
-        <div className="flex items-end">
-          <div className="h-28 w-40 rounded-full overflow-hidden">
+        <div className="flex items-center md:items-end my-1">
+          <div className="h-14 md:h-28 w-20 md:w-40 rounded-full overflow-hidden">
             <video
               src="https://cdn.cuberto.com/cb/home/featured/header.mp4?2"
               className=""
@@ -65,20 +65,20 @@ const Projects = () => {
           <div>
             <span
               id="design"
-              className="font-normal tracking-wide text-[8.5rem]"
+              className="font-normal tracking-wide text-[3.2rem] md:text-[8.5rem]"
             >
               &nbsp;projects
             </span>
           </div>
         </div>
       </div>
-      <div className="flex gap-x-14">
-        <div className="w-[36%]">
+      <div className="flex flex-col md:flex-row md:gap-x-14">
+        <div className="w-[94%] mx-auto md:mx-0 md:w-[36%]">
             {leftColumnProjects.map((project) => (
                 <ProjectCard key={project.title} title={project.title} url={project.url} />
             ))}
         </div>
-        <div className="w-[36%] mt-52">
+        <div className="w-[94%] mx-auto md:mx-0 md:w-[36%] md:mt-52">
             {rightColumnProjects.map((project) => (
                 <ProjectCard key={project.title} title={project.title} url={project.url} />
             ))}
