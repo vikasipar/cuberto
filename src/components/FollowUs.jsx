@@ -32,9 +32,7 @@ const FollowUs = () => {
         <span className="flex shrink-0 space-x-1 items-center">
           Follow Us <LiaGithub className="text-8xl text-stone-300 mx-9" />
         </span>
-        <span className="flex shrink-0 space-x-1 items-center">
-          Follow Us
-        </span>
+        <span className="flex shrink-0 space-x-1 items-center">Follow Us</span>
       </motion.div>
     </div>
   );
