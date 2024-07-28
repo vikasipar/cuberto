@@ -73,12 +73,12 @@ const Projects = () => {
         </div>
       </div>
       <div className="flex flex-col md:flex-row md:gap-x-14">
-        <div className="w-[94%] mx-auto md:mx-0 md:w-[36%]">
+        <div data-scroll data-scroll-speed="0" className="w-[94%] mx-auto md:mx-0 md:w-[36%]">
             {leftColumnProjects.map((project) => (
                 <ProjectCard key={project.title} title={project.title} url={project.url} />
             ))}
         </div>
-        <div className="w-[94%] mx-auto md:mx-0 md:w-[36%] md:mt-52">
+        <div data-scroll data-scroll-speed="0.5" className="w-[94%] mx-auto md:mx-0 md:w-[36%] md:mt-52">
             {rightColumnProjects.map((project) => (
                 <ProjectCard key={project.title} title={project.title} url={project.url} />
             ))}
