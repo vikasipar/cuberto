@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Services = () => {
   return (
@@ -9,14 +10,39 @@ const Services = () => {
       ></video>
       <div className="space-y-9 text-xl md:text-2xl px-6 md:px-0 font-normal">
         <p>
-          Cuberto is a leading digital product <br className="hidden md:block" />
+          Cuberto is a leading digital product{" "}
+          <br className="hidden md:block" />
           agency focused on branding, UI/UX <br className="hidden md:block" />
           design, mobile, and web <br className="hidden md:block" />
           development.
         </p>
-        <div className="w-fit px-24 md:px-28 py-14 md:py-16 flex justify-center border border-black rounded-full">
-          How we work
-        </div>
+        <motion.div
+          initial="initial"
+          whileHover="hovered"
+          transition={{ duration: 3 }}
+          className="relative flex flex-col whitespace-nowrap rounded-full p-0 text-center border border-black overflow-hidden hover:cursor-pointer"
+        >
+          <motion.div
+            variants={{
+              initial: { y: 0 },
+              hovered: { y: "-10%", opacity: 0 },
+            }}
+            transition={{ duration: 0.2 }}
+            className="relative rounded-full py-9 md:py-16 text-stone-900/90 border-2 bg-white border-none"
+          >
+            How we work
+          </motion.div>
+          <motion.div
+            variants={{
+              initial: { y: "100%" },
+              hovered: { y: 0 },
+            }}
+            transition={{ duration: 0.2, type: "tween", ease: "easeIn" }}
+            className="absolute inset-0 rounded-xl py-9 md:py-16 text-white border-2 bg-stone-950 border-none"
+          >
+            How we work
+          </motion.div>
+        </motion.div>
       </div>
     </div>
   );
