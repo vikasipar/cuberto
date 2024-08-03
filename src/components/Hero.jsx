@@ -8,11 +8,19 @@ const Hero = () => {
         <div className="h-12 md:h-24 w-20 md:w-36 rounded-full overflow-hidden">
           <video
             src="https://cdn.cuberto.com/cb/home/hero/1.mp4"
-            className=""
+            loop
+            autoPlay
+            muted
           ></video>
         </div>
         <div>
-          <span id="design" className="font-normal tracking-wide text-[2.8rem] md:text-[6.5rem]">&nbsp;design&nbsp;</span>and
+          <span
+            id="design"
+            className="font-normal tracking-wide text-[2.8rem] md:text-[6.5rem]"
+          >
+            &nbsp;design&nbsp;
+          </span>
+          and
         </div>
       </div>
       <div>motion agency</div>

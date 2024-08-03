@@ -49,7 +49,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="bg-stone-950 text-white h-fit pt-2 md:pt-0 pb-32 px-6 md:px-32 md:rounded-t-[4rem]">
+    <div className="bg-stone-950 text-white h-fit pt-2 md:pt-0 pb-0 md:pb-32 px-6 md:px-32 md:rounded-t-[4rem]">
       <div className="text-5xl md:text-9xl py-14 md:py-28 font-light">
         <div>Featured</div>
         <div className="flex items-center md:items-end my-1">
@@ -57,9 +57,9 @@ const Projects = () => {
             <video
               src="https://cdn.cuberto.com/cb/home/featured/header.mp4?2"
               className=""
-              //   loop
-              //   autoPlay
-              //   muted
+                loop
+                autoPlay
+                muted
             ></video>
           </div>
           <div>

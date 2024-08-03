@@ -5,6 +5,9 @@ const Services = () => {
   return (
     <div className="w-full h-[70vh] md:h-[120vh] flex items-center justify-center gap-x-9">
       <video
+        loop
+        autoPlay
+        muted
         src="https://cdn.cuberto.com/cb/home/summary/1.mp4?3"
         className="hidden lg:block w-1/3"
       ></video>
